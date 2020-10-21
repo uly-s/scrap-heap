@@ -1,0 +1,33 @@
+
+.App-body {
+  background-color: #282c34;
+  min-height: 100vh;
+
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+.col-1 {width: 20.00%;}
+.col-2 {width: 20.00%;}
+.col-3 {width: 20.00%;}
+.col-4 {width: 40.00%;}
+
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+  min-height: 80vh;
+}
+
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
